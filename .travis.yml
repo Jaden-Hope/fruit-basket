@@ -6,9 +6,10 @@ branches:
   only:
   - gh-pages
 
-# services:
-#   - postgresql
+services:
+  - postgresql
 
-# before_script:
-#   - psql -c 'create database fruitbasket;' -U postgres
+before_script:
+  - psql -c 'create database fruitbasket;' -U postgres
+  - psql -f fruitBasket.sql
 #   - psql -c 'CREATE TABLE fruit_basket (id serial primary key, fruit text not null, quantity int not null, unit_price int not null);' -U postgres
