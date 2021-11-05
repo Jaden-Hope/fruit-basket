@@ -16,7 +16,7 @@ const factory = Factory(pool);
 
 describe('Fruit Basket testing:', () => {
     beforeEach(async() => {
-        await pool.query('TRUNCATE TABLE fruitbasket.fruit_basket');
+        await pool.query('TRUNCATE TABLE fruit_basket');
     })
 
     it('Should insert new fruit basket', async() => {
