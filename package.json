@@ -1,0 +1,11 @@
+{
+  "name": "fruit-basket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fruitBasketFactory.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
