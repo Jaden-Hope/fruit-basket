@@ -10,4 +10,4 @@ services:
   - postgresql
 
 before_script:
-  - psql -c 'create database fruit_basket;' -U postgres
+  - psql -c 'create database fruitbasket;' -U postgres
