@@ -3,9 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "fruitBasketFactory.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
     "test": "mocha"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
 }
