@@ -18,14 +18,14 @@ module.exports = function fruitBasket(pool) {
     }
 
     async function sumTotalBasket(fruit) {
-        const total = await ( await pool.query('SELECT sum(quantity * unit_price)* FROM fruit_basket WHERE fruit = $1', [fruit])).rows;
+        const total = await ( await pool.query('SELECT sum(quantity * unit_price) FROM fruit_basket WHERE fruit = $1', [fruit])).rows;
 
         // let total = 0;
         // totalArr.forEach(item => {
         //     total += (item.quantity * item.unit_price);
         // });
 
-        return total;
+        return total[0].sum;
     }
 
     return {
